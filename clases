@@ -1,0 +1,56 @@
+Class Publicacion{
+	private:
+		String DOI;
+		String titulo;
+		DTFecha fecha;
+	public:
+		DTRefer getDT();
+		Virtual Bool ContienePalabra(String: Palabra);
+};
+DTRefer getDT(){
+	// return ALGO
+};
+
+Class Publicacion :: ArticuloRevista{
+	private:
+		String Revista;
+		String Extracto;
+	public:
+		Virtual Bool ContienePalabra(String: Palabra);
+}
+Bool ContienePalabra(String: Palabra){
+ //recorrer palabra por palabra comparando hasta encontrarla o terminar. 
+}
+
+Class Publicacion ::Libro{
+	private:
+		String Editorial;
+	Public:
+    Virtual Bool ContienePalabra(String: Palabra);
+    String PalabrasDestacadas();?
+}
+Bool ContienePalabra(String: Palabra){
+}
+
+Class Publicacion ::PaginaWeb{
+	private:
+		String url
+		String ContenidoExtraido;
+	public:
+		Virtual Bool ContienePalabra(String: Palabra);
+}
+Bool ContienePalabra(String: Palabra){
+}
+
+Class Investigador{
+	private:
+		String ORCID, nombre, institucion;
+	public:
+		String toString();
+		String ListarPublicaciones(DTFecha: desde, String: palabra);
+}
+String toString(){
+	return ORCID->nombre/institucion;
+};
+String ListarPublicaciones(DTFecha: desde, String: palabra){
+}
