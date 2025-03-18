@@ -1,4 +1,4 @@
-Class Publicacion{
+class Publicacion{
 	private:
 		String DOI;
 		String titulo;
@@ -11,7 +11,7 @@ DTRefer getDT(){
 	// return ALGO
 };
 
-Class Publicacion :: ArticuloRevista{
+class Publicacion :: ArticuloRevista{
 	private:
 		String Revista;
 		String Extracto;
@@ -22,7 +22,7 @@ Bool ContienePalabra(String: Palabra){
  //recorrer palabra por palabra comparando hasta encontrarla o terminar. 
 }
 
-Class Publicacion ::Libro{
+class Publicacion ::Libro{
 	private:
 		String Editorial;
 	Public:
@@ -32,7 +32,7 @@ Class Publicacion ::Libro{
 Bool ContienePalabra(String: Palabra){
 }
 
-Class Publicacion ::PaginaWeb{
+class Publicacion ::PaginaWeb{
 	private:
 		String url
 		String ContenidoExtraido;
@@ -42,7 +42,7 @@ Class Publicacion ::PaginaWeb{
 Bool ContienePalabra(String: Palabra){
 }
 
-Class Investigador{
+class Investigador{
 	private:
 		String ORCID, nombre, institucion;
 	public:
