@@ -1,0 +1,11 @@
+class DTFecha{
+	public:
+		int Dia, Mes, Año;
+}
+
+class DTRefer{
+	public:
+    String DOI, titulo;
+		DTFecha fecha;
+		//String autores();?
+}
