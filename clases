@@ -1,11 +1,11 @@
 class Publicacion{
 	private:
-		String DOI;
-		String titulo;
+		string DOI;
+		string titulo;
 		DTFecha fecha;
 	public:
 		DTRefer getDT();
-		Virtual Bool ContienePalabra(String: Palabra);
+		virtual Bool ContienePalabra(String: Palabra);
 };
 DTRefer getDT(){
 	// return ALGO
