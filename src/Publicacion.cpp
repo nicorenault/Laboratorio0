@@ -42,18 +42,14 @@ DTFecha Publicacion::getFecha() {
     return fecha;
 }
 
-// Agregar autor a la lista de autores (esto no entendi)
+// Agregar autor a la lista de autores
 void Publicacion::agregarAutor(Investigador* autor) {
-    autores.push_back(autor);
+    //hacer
 }
 
-// Obtener un DTRefer con la información de la publicación(esto no entendi)
+// Obtener un DTRefer con la información de la publicación
 DTRefer Publicacion::getDT() {
-    vector<string> nombresAutores;
-    for (auto& autor : autores) {
-        nombresAutores.push_back(autor->toString());
-    }
-    return DTRefer(doi, titulo, fecha.toString(), nombresAutores);
+   //hacer
 }
 
 
