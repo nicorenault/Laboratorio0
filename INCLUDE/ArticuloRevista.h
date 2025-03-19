@@ -6,14 +6,18 @@
 using namespace std;
 
 
-class ArticuloRevista : Publicacion{
+class ArticuloRevista : public Publicacion{
 	private:
 		string Revista;
 		string Extracto;
 	public:
-		virtual bool ContienePalabra(string Palabra);
-        ArticuloRevista(const string& Revista_, const string& Extracto_);
-        virtual ~ArticuloRevista();        
+        	ArticuloRevista(const string& Revista_, const string& Extracto_);
+        	virtual ~ArticuloRevista();    
+		void setRevista(string revista);
+    		void setExtracto(string extracto);
+   		string getRevista();
+   	 	string getExtracto();
+		virtual bool ContienePalabra(string& Palabra);
 };
 
 
