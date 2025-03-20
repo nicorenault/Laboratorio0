@@ -15,7 +15,7 @@ public:
     int getAnio();
     string toString();
     // un comparador de fechas nos va a servir para mas adelante
-    bool operator >(const DTFecha& other);
+    bool operator >(DTFecha& other);
 
 };
 
