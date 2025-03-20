@@ -13,13 +13,13 @@ class PaginaWeb : public virtual Publicacion{
 		string ContenidoExtraido;
 	public:
         	PaginaWeb();
-        	PaginaWeb(const string& url_, const string& ContenidoExtraido_);   
+        	PaginaWeb(string& url_, string& ContenidoExtraido_);   
         	virtual ~PaginaWeb(); 
 		void setUrl(std::string url);
     		void setcontenidoExtraido(std::string contenidoExtraido);		
     		string getUrl();
     		string getcontenidoExtraido();
-	    	virtual bool ContienePalabra(const string& Palabra);
+	    	virtual bool ContienePalabra(string& Palabra);
 };
 
 #endif
