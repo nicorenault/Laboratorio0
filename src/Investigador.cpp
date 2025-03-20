@@ -47,7 +47,17 @@ string Investigador::toString(){
     return ORCID + "->" + nombre + "/" + institucion;
 }
 
-
+vector<string> Investigador::ListarPublicaciones(DTFecha desde, string palabra){
+    vector<string> resultado;
+    for (Publicacion *pub : publicaciones){
+        if (pub->getFecha() > desde){
+            if (pub->contienePalabra(palabra)){
+                resultado.push_back(pub->getDOI())
+            }
+        } 
+    }
+    return resultado;
+}
 
 
 
