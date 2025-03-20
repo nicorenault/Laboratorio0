@@ -11,7 +11,7 @@ class ArticuloRevista : public Publicacion{
 		string Revista;
 		string Extracto;
 	public:
-        	ArticuloRevista(string& Revista_, string& Extracto_);
+        	ArticuloRevista(const string& DOI_, const string& titulo_, const DTFecha& fecha_, string& Revista_, string& Extracto_);
         	virtual ~ArticuloRevista();    
 		void setRevista(string revista);
     		void setExtracto(string extracto);
