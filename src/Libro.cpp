@@ -36,3 +36,11 @@ void Libro::setPalabrasClave(vector<string>& palabrasClave) {
 bool Libro::contienePalabra(string s){
     return find(PalabrasDestacadas.begin(), PalabrasDestacadas.end(), s) != PalabrasDestacadas.end();
 }
+
+bool Libro::ContienePalabra(string palabra){
+    for (auto& p : PalabraClave){
+        if (p == palabra) return true;
+    }
+    return false;
+}
+
