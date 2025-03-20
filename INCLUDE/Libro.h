@@ -12,15 +12,15 @@ using namespace std;
 class Libro : public virtual Publicacion{
 	private:
 		string Editorial;
-		vector<std::string> PalabrasDestacadas;
+		vector<std::string> PalabrasPalabrasClaves;
 	public:
 	Libro();
-	Libro(const string& Editorial_; vector<std::string> PalabrasDestacadas);
+	Libro(string& Editorial_; vector<std::string> PalabrasPalabrasClave);
   	virtual ~Libro();
 	void setEditorial(string editorial);
-    	void setPalabrasDestacadas(string PalabrasDestacadas);
+    	void setPalabrasPalabrasClave(string PalabrasPalabrasClave);
     	string getEditorial();
-	string getPalabrasDestacadas();
+	string getPalabrasClave();
 	virtual bool ContienePalabra(string Palabra);
 };
 #endif
