@@ -13,7 +13,7 @@ class DTRefer {
         DTFecha fecha;
         vector<std::string> autores; 
     public:
-        DTRefer(const string& doi_, const string& titulo_, const DTFecha& fecha_);
+        DTRefer(string& doi_, string& titulo_, cDTFecha& fecha_);
         ~DTRefer();  
     
         string getDOI();
@@ -21,7 +21,7 @@ class DTRefer {
         DTFecha getFecha();
         int getNumAutores();
         vector<std::string> getAutores();
-        friend std::ostream& operator<<(std::ostream& os, const DTRefer& dt); // A esto se refiere la parte 2. Más eficiente la impresión del objeto
+        friend std::ostream& operator<<(std::ostream& os, DTRefer& dt); // A esto se refiere la parte 2. Más eficiente la impresión del objeto
 
 };
     
