@@ -21,7 +21,7 @@ class DTRefer {
         DTFecha getFecha();
         int getNumAutores();
         vector<std::string> getAutores();
-        friend std::ostream& operator<<(std::ostream& os, DTRefer& dt); // A esto se refiere la parte 2. Más eficiente la impresión del objeto
+        friend std::ostream& operator<<(ostream& os, DTRefer& dt); // A esto se refiere la parte 2. Más eficiente la impresión del objeto
 
 };
     
