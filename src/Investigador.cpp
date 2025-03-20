@@ -2,7 +2,7 @@
 #include <iostream>
 
 // Constructor
-Investigador::Investigador(const string& orcid, const string& nombre, const string& institucion){
+Investigador::Investigador(string& ORCID, string& nombre, string& institucion){
     ORCID = orcid;
     Nombre = nombre;
     Institucion = institucion;
