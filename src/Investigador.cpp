@@ -12,31 +12,42 @@ Investigador::Investigador(const string& orcid, const string& nombre, const stri
 Investigador::~Investigador() {}
 
 // Getters
-string Investigador::getORCID() const { 
+string Investigador::getORCID(){ 
     return ORCID; 
 }
 
-string Investigador::getNombre() const { 
+string Investigador::getNombre(){ 
     return Nombre; 
 }
 
-string Investigador::getInstitucion() const { 
+string Investigador::getInstitucion(){ 
     return Institucion; 
 }
 
-vector<Publicacion*> Investigador::getPublicaciones() const { 
+vector<Publicacion*> Investigador::getPublicaciones(){ 
     return Publicaciones; 
 }
 
 // Setters
-void Investigador::setORCID(const string& orcid) { 
+void Investigador::setORCID(string& orcid) { 
     this->ORCID = orcid; 
 }
 
-void Investigador::setNombre(const string& nombre) { 
+void Investigador::setNombre(string& nombre) { 
     this->Nombre = nombre; 
 }
 
-void Investigador::setInstitucion(const string& institucion) { 
+void Investigador::setInstitucion(string& institucion) { 
     this->Institucion = institucion; 
 }
+
+//Funciones
+
+string Investigador::toString(){
+    
+}
+
+
+
+
+
