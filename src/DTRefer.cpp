@@ -30,7 +30,7 @@ int DTRefer::getNumAutores(){
 }
 
 // Sobrecarga del operador << para imprimir DTRefer
-ostream& operator<<(ostream& os, const DTRefer& dt) {
+ostream& operator<<(ostream& os, DTRefer& dt) {
     os << dt.DOI << " -> " << dt.Titulo << " (" << dt.Fecha << ") / ";
     for (size_t i = 0; i < dt.Autores.size(); ++i) {
         os << dt.Autores[i];
