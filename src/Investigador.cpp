@@ -2,8 +2,11 @@
 #include <iostream>
 
 // Constructor
-Investigador::Investigador(const string& orcid, const string& nombre, const string& institucion)
-    : ORCID(orcid), Nombre(nombre), Institucion(institucion) {}
+Investigador::Investigador(const string& orcid, const string& nombre, const string& institucion){
+    ORCID = orcid;
+    Nombre = nombre;
+    Institucion = institucion;
+}
 
 // Destructor
 Investigador::~Investigador() {}
