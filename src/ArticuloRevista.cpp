@@ -2,7 +2,7 @@
 #include <iostream>
 
 // Constructor con parámetros
-ArticuloRevista::ArticuloRevista(string& r, string& e){
+ArticuloRevista::ArticuloRevista(string& r, string& e): Publicacion(d, t, f){
     Revista = r;
     Extracto = e; 
 }
