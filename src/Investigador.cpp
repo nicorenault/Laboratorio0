@@ -44,7 +44,7 @@ void Investigador::setInstitucion(string& institucion) {
 //Funciones
 
 string Investigador::toString(){
-    return (getORCID() "->" getNombre() "/" getInstitucion())
+    return ORCID + "->" + nombre + "/" + institucion;
 }
 
 
