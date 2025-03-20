@@ -1,4 +1,5 @@
 #include "ArticuloRevista.h"
+#include <iostream>
 
 // Constructor con parámetros
 ArticuloRevista::ArticuloRevista(string& r, string& e){
