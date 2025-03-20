@@ -1,7 +1,7 @@
 #include "DTRefer.h"
 
 // Constructor
-DTRefer::DTRefer(const string& doi, const string& titulo, const string& fecha, const vector<string>& autores){
+DTRefer::DTRefer(string& doi, string& titulo, string& fecha, vector<string>& autores){
     DOI = doi;
     Titulo = titulo; 
     Fecha = fecha;
@@ -9,23 +9,23 @@ DTRefer::DTRefer(const string& doi, const string& titulo, const string& fecha, c
 }
 
 // Getters
-string DTRefer::getDOI() const { 
+string DTRefer::getDOI(){ 
     return DOI; 
 }
 
-string DTRefer::getTitulo() const { 
+string DTRefer::getTitulo(){ 
     return Titulo; 
 }
 
-string DTRefer::getFecha() const { 
+string DTRefer::getFecha(){ 
     return Fecha; 
 }
 
-vector<string> DTRefer::getAutores() const { 
+vector<string> DTRefer::getAutores(){ 
     return Autores; 
 }
 
-int DTRefer::getNumAutores() const { 
+int DTRefer::getNumAutores(){ 
     return Autores.size(); 
 }
 
