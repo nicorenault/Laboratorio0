@@ -9,15 +9,15 @@ using namespace std;
 
 class PaginaWeb : public virtual Publicacion{
 	private:
-		string url;
+		string URL;
 		string ContenidoExtraido;
 	public:
         	PaginaWeb();
         	PaginaWeb(string& url_, string& ContenidoExtraido_);   
         	virtual ~PaginaWeb(); 
-		void setUrl(std::string url);
-    		void setcontenidoExtraido(std::string contenidoExtraido);		
-    		string getUrl();
+		void setURL(string url);
+    		void setcontenidoExtraido(string contenidoExtraido);		
+    		string getURL();
     		string getcontenidoExtraido();
 	    	virtual bool ContienePalabra(string& Palabra);
 };
