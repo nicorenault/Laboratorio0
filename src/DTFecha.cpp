@@ -7,27 +7,27 @@ DTFecha::DTFecha(int d, int m, int a) {
 }
 
 // Getters
-int DTFecha::getDia() const {
+int DTFecha::getDia(){
     return dia;
 }
 
-int DTFecha::getMes() const {
+int DTFecha::getMes(){
     return mes;
 }
 
-int DTFecha::getAnio() const {
+int DTFecha::getAnio(){
     return anio;
 }
  
 // Método toString para representar la fecha como string
-string DTFecha::toString() const {
+string DTFecha::toString(){
     ostringstream oss;
     oss << dia << "/" << mes << "/" << anio;
     return oss.str();
 }
 
 // Operador de comparación '>'
-bool DTFecha::operator>(const DTFecha& otra) const {
+bool DTFecha::operator>(DTFecha& otra){
     if (anio > otra.anio) return true;
     if (anio == otra.anio && mes > otra.mes) return true;
     if (anio == otra.anio && mes == otra.mes && dia > otra.dia) return true;
