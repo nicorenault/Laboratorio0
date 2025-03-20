@@ -29,5 +29,5 @@ void Libro::setPalabrasClave(const vector<string>& palabrasClave) {
 //Funciones
 
 bool Libro::contienePalabra(string s){
-    
+    return find(PalabrasDestacadas.begin(), PalabrasDestacadas.end(), s) != PalabrasDestacadas.end();
 }
