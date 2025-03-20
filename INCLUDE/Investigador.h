@@ -14,7 +14,7 @@ class Investigador{
 		string ORCID, nombre, institucion;
 		vector<Publicacion*> publicaciones;
 	public:
-        	Investigador(const string& ORCID_, const string& nombre_, const string& institucion_);
+        	Investigador(string& ORCID_, string& nombre_, string& institucion_);
        	 	~Investigador();
 		void setOrcid(string Orcid);
     		void setNombre(string Nombre);
