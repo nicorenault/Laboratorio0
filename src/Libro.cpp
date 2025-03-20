@@ -2,27 +2,27 @@
 #include <iostream>
 
 // Constructor
-Libro::Libro(const string& doi, const string& titulo, const string& fecha, const string& editorial, const vector<string>& palabrasClave)
+Libro::Libro(string& doi, string& titulo, string& fecha, string& editorial, vector<string>& palabrasClave)
     : Publicacion(doi, titulo, fecha), Editorial(editorial), PalabrasClave(palabrasClave) {}
 
 // Destructor
 Libro::~Libro() {}
 
 // Getters
-string Libro::getEditorial() const { 
+string Libro::getEditorial(){ 
     return Editorial; 
 }
 
-vector<string> Libro::getPalabrasClave() const { 
+vector<string> Libro::getPalabrasClave(){ 
     return PalabrasClave; 
 }
 
 // Setters
-void Libro::setEditorial(const string& editorial) { 
+void Libro::setEditorial(string& editorial) { 
     this->Editorial = editorial; 
 }
 
-void Libro::setPalabrasClave(const vector<string>& palabrasClave) { 
+void Libro::setPalabrasClave(vector<string>& palabrasClave) { 
     this->PalabrasClave = palabrasClave; 
 }
 
