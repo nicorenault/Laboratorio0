@@ -1,7 +1,7 @@
 #include "ArticuloRevista.h"
 
 // Constructor con parámetros
-ArticuloRevista::ArticuloRevista(const string& r, const string& e){
+ArticuloRevista::ArticuloRevista(string& r, string& e){
     Revista = r;
     Extracto = e; 
 }
@@ -29,7 +29,7 @@ string ArticuloRevista::getExtracto() {
 }
 
 // Método para verificar si el extracto contiene una palabra
-bool ArticuloRevista::ContienePalabra(const string& palabra) {
+bool ArticuloRevista::ContienePalabra(string& palabra) {
     size_t pos = 0, found;
     while ((found = this->Extracto.find(' ', pos)) != string::npos) { //find busca los espacios
         if (this->Extracto.substr(pos, found - pos) == palabra) { // substr extrae la palabra que se encuentra entre pos y found
