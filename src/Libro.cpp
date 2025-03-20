@@ -25,3 +25,9 @@ void Libro::setEditorial(const string& editorial) {
 void Libro::setPalabrasClave(const vector<string>& palabrasClave) { 
     this->PalabrasClave = palabrasClave; 
 }
+
+//Funciones
+
+bool Libro::contienePalabra(string s){
+    
+}
