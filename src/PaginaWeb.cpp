@@ -2,26 +2,36 @@
 #include <iostream>
 
 // Constructor
-PaginaWeb::PaginaWeb(const string& doi, const string& titulo, const string& fecha, const string& url, const string& contenidoExtraido)
-    : Publicacion(doi, titulo, fecha), URL(url), ContenidoExtraido(contenidoExtraido) {}
+PaginaWeb::PaginaWeb(string& d, string& t, string& f, string& u, string& ce){
+    Publicacion.doi = d;
+    Publicacion.titulo = t;
+    Publicacion.fecha = f; 
+    URL = u; 
+    ContenidoExtraido = ce; 
+}
 
 // Destructor
-PaginaWeb::~PaginaWeb() {}
+PaginaWeb::~PaginaWeb() {
+}
 
 // Getters
-string PaginaWeb::getURL() const { 
+string PaginaWeb::getURL() { 
     return URL; 
 }
 
-string PaginaWeb::getContenidoExtraido() const { 
+string PaginaWeb::getContenidoExtraido() { 
     return ContenidoExtraido; 
 }
 
 // Setters
-void PaginaWeb::setURL(const string& url) { 
+void PaginaWeb::setURL(string& url) { 
     this->URL = url; 
 }
 
-void PaginaWeb::setContenidoExtraido(const string& contenidoExtraido) { 
+void PaginaWeb::setContenidoExtraido(string& contenidoExtraido) { 
     this->ContenidoExtraido = contenidoExtraido; 
+}
+
+bool contienePalabra (string& palabra){
+    
 }
