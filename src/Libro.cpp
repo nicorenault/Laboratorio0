@@ -2,10 +2,7 @@
 #include <iostream>
 
 // Constructor
-Libro::Libro(string& doi, string& titulo, string& fecha, string& editorial, vector<string>& palabrasClave){
-    Publicacion.doi = doi; 
-    Publicacion.titulo = titulo; 
-    Publicacion.fecha = fecha; 
+Libro::Libro(string& doi, string& titulo, string& fecha, string& editorial, vector<string>& palabrasClave):Publicacion(doi,titulo,fecha){
     Editorial.editorial = editorial;
     PalabrasClave.palabrasClave = palabrasClave;
 }
