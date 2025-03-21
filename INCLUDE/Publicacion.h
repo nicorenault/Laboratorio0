@@ -17,7 +17,7 @@ class Publicacion{
 		DTFecha fecha;
 		vector<Investigador*> autores;
 	public:
-        	Publicacion(string& DOI_, string& titulo_, DTFecha& fecha_, vector<Investigador*>& autores_);
+        	Publicacion(string& DOI_, string& titulo_, DTFecha& fecha_);
         	virtual ~Publicacion();
 		DTRefer getDT();
 	 	void setDoi(string doi);
