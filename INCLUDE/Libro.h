@@ -15,7 +15,7 @@ class Libro : public virtual Publicacion{
 		vector<std::string> PalabrasPalabrasClaves;
 	public:
 	Libro();
-	Libro(string& Editorial_; vector<std::string> PalabrasPalabrasClave);
+	Libro(string& DOI_, string& titulo_, DTFecha& fecha_,string& Editorial_, vector<std::string> PalabrasPalabrasClave);
   	virtual ~Libro();
 	void setEditorial(string editorial);
     	void setPalabrasPalabrasClave(string PalabrasPalabrasClave);
