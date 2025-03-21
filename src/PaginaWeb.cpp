@@ -2,10 +2,7 @@
 #include <iostream>
 
 // Constructor
-PaginaWeb::PaginaWeb(string& d, string& t, string& f, string& u, string& ce){
-    Publicacion.doi = d;
-    Publicacion.titulo = t;
-    Publicacion.fecha = f; 
+PaginaWeb::PaginaWeb(string& d, string& t, string& f, string& u, string& ce)Publicacion(d,t,f){
     URL = u; 
     ContenidoExtraido = ce; 
 }
