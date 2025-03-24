@@ -99,7 +99,7 @@ void parte_c(){
 }
 
 void parte_d(){
-	cout << "📌 Imprimiendo información de las publicaciones..." << endl;
+	cout << "Imprimiendo información de las publicaciones..." << endl;
     		for (Publicacion* pub : publicaciones) {
         		cout << pub->getDT() << endl;
     	}
