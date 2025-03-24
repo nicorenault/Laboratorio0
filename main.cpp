@@ -82,9 +82,6 @@ void parte_b(){
 	coleccion_guardarPublicacion(libro2);
     };
 
-  
-  
-
 
 void parte_c(){
 	PaginaWeb* pagina = new PaginaWeb(
@@ -94,16 +91,12 @@ void parte_c(){
         	"www.umlparaprincipiantes.com", 
         	"En esta pagina web se presenta una guia completa sobre los diagramas UML, abordando los diagramas de casos de uso, de clases, de secuencia y de actividades."
 	);
-
     	coleccion_guardarPublicacion(pagina);
 }
 
 void parte_d(){
-	cout << "Imprimiendo información de las publicaciones..." << endl;
-    		for (Publicacion* pub : publicaciones) {
-        		cout << pub->getDT() << endl;
-    	}
-
+	for (Publicacion* pub : publicaciones)
+		cout << pub->getDT() << endl;
 }
 
 void parte_e(){
@@ -123,25 +116,31 @@ void parte_e(){
 }
 
 void parte_f(){
-	for (Investigador* inv : investigadores) {
+	for (Investigador* inv : investigadores)
         	cout << inv->toString() << endl;
-    	}
-
 }
 
-void parte_g(){
-	coleccion_getInvestigador("0000-0003-1234-5678")->agregarPublicacion(coleccion_getPublicacion("10.1234/abc123"));
-	coleccion_getInvestigador("0000-0003-1234-5678")->agregarPublicacion(coleccion_getPublicacion("10.4567/jkl012"));
+void parte_g(){ //revisar preguntar por flecha ->
+// Carla Oliveri
+    Investigador* carla = coleccion_getInvestigador("0000-0003-1234-5678");
+    carla->agregarPublicacion(coleccion_getPublicacion("10.1234/abc123"));
+    carla->agregarPublicacion(coleccion_getPublicacion("10.4567/jkl012"));
+    carla->agregarPublicacion(coleccion_getPublicacion("10.5678/mno345"));
+    carla->agregarPublicacion(coleccion_getPublicacion("10.3456/ghi789"));
+
+// Alberto Santos
+    Investigador* alberto = coleccion_getInvestigador("0000-0001-8765-4321");
+    alberto->agregarPublicacion(coleccion_getPublicacion("10.1234/abc123"));
+    alberto->agregarPublicacion(coleccion_getPublicacion("10.2345/def456"));
+    alberto->agregarPublicacion(coleccion_getPublicacion("10.4567/jkl012"));
 }
 
 void parte_h(){
 	DTFecha fechaFiltro(10, 12, 2023);
 	vector<string> resultado = coleccion_getInvestigador("0000-0003-1234-5678")->listarPublicaciones(fechaFiltro, "UML");
 
-	for (const string& doi : resultado) {
+	for (const string& doi : resultado)
         	cout << doi << endl;
-    	}
-
 }
 
 void parte_i(){
@@ -152,32 +151,29 @@ void parte_j(){
     DTFecha fechaFiltro(1, 1, 2020);
     vector<string> resultado = coleccion_getInvestigador("0000-0003-1234-5678")->listarPublicaciones(fechaFiltro, "UML");
 
-    for (const string& doi : resultado) {
+    for (const string& doi : resultado)
         cout << doi << endl;
-    }
-
 }
 
 void parte_k(){
-	for (Publicacion* pub : publicaciones) {
+	for (Publicacion* pub : publicaciones)
         	cout << pub->getDT() << endl;
-	}
 }
 
 // Función para limpiar memoria antes de salir del programa
-void cleanUp() {
-    for (Investigador* inv : investigadores) {
-        delete inv;
-    }
-    investigadores.clear();
-    map_investigadores.clear();
+//void cleanUp() {
+  //  for (Investigador* inv : investigadores) {
+      //  delete inv;
+  //  }
+  //  investigadores.clear();
+   // map_investigadores.clear();
 
-    for (Publicacion* pub : publicaciones) {
-        delete pub;
-    }
-    publicaciones.clear();
-    map_publicaciones.clear();
-}
+  // for (Publicacion* pub : publicaciones) {
+      //  delete pub;
+ //   }
+ //   publicaciones.clear();
+  //  map_publicaciones.clear();
+//}
 
 
 
